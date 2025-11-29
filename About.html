@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – Vigan City</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Sigmar+One&family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("https://media.istockphoto.com/id/1312111538/vector/vector-seamless-subtle-lines-mosaic-pattern-modern-stylish-abstract-texture-repeating.jpg?s=612x612&w=0&k=20&c=hIepZ0UkSNpJRS1C8MmAn_e4jrQi24qlVkYON9yUjV0=");
+            background-size: 400px;
+            animation: moveIt 200s linear infinite;
+            margin: 0;
+        }
+
+        @keyframes moveIt {
+            100% { background-position: 0px -5555px; }
+        }
+
+        header {
+            padding: 40px 20px 20px;
+            text-align: center;
+            position: relative;
+            font-family: "Gochi Hand", cursive;
+        }
+
+        .back-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+            color: #31261D;
+            text-decoration: none;
+            background: rgba(255,255,255,0.7);
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: rgba(255,255,255,0.9);
+        }
+
+        header h2 {
+            font-family: "Sigmar One", sans-serif;
+            font-size: 55px;
+            margin: 10px 0;
+            color: #31261D;
+            text-shadow: 0px 3px 7px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            margin-top: 20px;
+            padding: 20px 0;
+            font-size: 45px;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        }
+
+        .card-link {
+            text-decoration: none !important;
+            display: block;
+        }
+
+        .card-box {
+            padding: 20px;
+            text-align: center;
+            height: 450px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 42px;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            text-shadow: 0px 6px 6px rgba(0,0,0,0.7);
+            transition: transform 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-box::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+        }
+
+        .card-box:hover {
+            transform: scale(1.05);
+        }
+
+        .card-box h3, .card-box p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-box p {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 20px;
+        }
+
+        .box1 { background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"); }
+        .box2 { background-image: url("https://pbs.twimg.com/media/G6nF57pbwAUPWJS.jpg"); }
+        .box3 { background-image: url("https://cdn.essential-japan.com/wp-content/uploads/2025/10/kaiju-no-8-the-game-Future-Sight-Gen-Narumi-3.webp"); }
+
+        .main {
+            padding: 30px 15px;
+        }
+
+        @media (max-width: 576px) {
+            .card-box {
+                height: 380px;
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="back-home">← Home</a>
+    <h2>Welcome to Vigan City</h2>
+    <h1>About the Authors</h1>
+</header>
+
+<main class="main container">
+    <div class="row g-4">
+
+        <div class="col-12 col-sm-4">
+            <a class="card-link" href="#">
+                <div class="card-box box1">
+                    <h3>Christian</h3>
+                    <p>Author of Delicacies & Galleries<br>Vigan City Enthusiast</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+            <a class="card-link" href="#">
+                <div class="card-box box2">
+                    <h3>Rodd</h3>
+                    <p>Author of the Home Page<br>Graphics Enthusiast</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+            <a class="card-link" href="#">
+                <div class="card-box box3">
+                    <h3>G3rd</h3>
+                    <p>Hotel Author & Page Developer<br>Vigan City Supporter</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
